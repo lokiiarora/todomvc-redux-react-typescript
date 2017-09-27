@@ -17,7 +17,7 @@
   "dependencies": {
     "classnames": "2.2.5",
     "concurrently": "3.4.0",
-    "express": "4.15.2",
+    "express": "4.15.5",
     "extract-text-webpack-plugin": "2.1.0",
     "lodash": "4.17.4",
     "react": "15.4.2",
@@ -25,7 +25,7 @@
     "react-redux": "5.0.3",
     "redux": "3.6.0",
     "redux-actions": "2.0.1",
-    "serve-static": "1.12.1",
+    "serve-static": "1.12.6",
     "todomvc-app-css": "2.0.6",
     "yargs": "7.0.1"
   },
