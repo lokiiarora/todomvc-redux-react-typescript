@@ -10,7 +10,9 @@
     "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.config.js --progress --profile --colors",
     "start": "cross-env NODE_ENV=development node server",
     "start:prod": "cross-env NODE_ENV=production node server",
-    "test": "tsc && mocha --require test-setup --recursive ./dist/**/__spec__/**/*-spec.js"
+    "test": "tsc && mocha --require test-setup --recursive ./dist/**/__spec__/**/*-spec.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Jack Hsu <jack.hsu@gmail.com>",
   "license": "ISC",
@@ -27,7 +29,8 @@
     "redux-actions": "2.0.1",
     "serve-static": "1.13.0",
     "todomvc-app-css": "2.0.6",
-    "yargs": "7.0.1"
+    "yargs": "7.0.1",
+    "snyk": "^1.258.2"
   },
   "devDependencies": {
     "@types/assertion-error": "1.0.30",
@@ -72,5 +75,6 @@
     "webpack": "2.2.1",
     "webpack-dev-server": "2.4.1",
     "webpack-hot-middleware": "2.17.1"
-  }
+  },
+  "snyk": true
 }
